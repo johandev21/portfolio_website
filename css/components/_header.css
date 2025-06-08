@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0.5rem;
+    position: relative;
+}
+
+.header__menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.header__title {
+    font-size: 1.2rem;
+}

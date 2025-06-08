@@ -1,0 +1,80 @@
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-top: 3.9rem;
+}
+
+.info__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 6.6rem);
+    max-width: 32.5rem;
+}
+
+.info__image {
+    background-color: var(--foreground);
+    width: 25%;
+    min-width: 6rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.info__name {
+    font-size: 1.25rem;
+}
+
+.info__career {
+    background: linear-gradient(90deg, var(--text-gradient));
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.info__description {
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 0.875rem;
+}
+
+.info__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.info__action-icon {
+    font-size: 1.25rem;
+}
+
+.info__cv-button {
+    background-color: var(--foreground);
+    color: var(--background);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.188rem 0.375rem;
+    cursor: pointer;
+}
+
+.scroll-down {
+    position: relative;
+    bottom: -22vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.375rem;
+}
+
+.scroll-down__text {
+    font-size: 0.75rem;
+}
+
+.scroll-down__icon {
+    position: absolute;
+    top: 1.5rem;
+    animation: scrollDownAnimation 2.5s infinite;
+}

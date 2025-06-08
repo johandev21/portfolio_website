@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Base styles */
+@import './base/_reset.css';
+@import './base/_variables.css';
+@import './base/_animations.css';
+@import './base/_utilities.css';
+
+/* Components */
+@import './components/_header.css';
+@import './components/_navigation.css';
+@import './components/_info.css';
+@import './components/_skills.css';
+@import './components/_projects.css';
+@import './components/_contact.css';
+@import './components/_footer.css';
+
+/* Transitions */
+* {
+    transition: background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Elements that shouldn't transition */
+.scroll-down__icon,
+.info__action-icon,
+.project-card__technology-icon,
+.technologies__icon,
+.nav__theme-toggle,
+.mobile_nav__close-menu,
+.header__menu-icon {
+    transition: none;
+}
+
+/* Media Queries */
+@media (min-width: 75rem) {
+    .header {
+        position: fixed;
+        background-color: var(--header-background);
+        backdrop-filter: blur(0.2rem);
+        z-index: 200;
+    }
+
+    .info {
+        margin-top: 10rem;
+    }
+
+    .mobile_nav {
+        display: none;
+    }
+
+    .header__menu-icon {
+        display: none;
+    }
+
+    .header__wrapper {
+        padding: 1rem 0;
+    }
+
+    .desktop_nav {
+        display: flex;
+    }
+
+    .projects {
+        height: 100vh;
+    }
+}

@@ -1,0 +1,182 @@
+:root {
+    /* Base theme colors */
+    --background: hsl(240, 10%, 4%);
+    --foreground: hsl(0, 0%, 85%);
+    --secondary-foreground: hsl(0, 0%, 48%);
+    --primary: hsl(0, 0%, 85%);
+    --card-background: hsl(0, 0%, 8%);
+    --border: hsl(0, 0%, 48%);
+    --text-gradient: hsl(51, 100%, 50%), hsl(0, 94%, 51%);
+
+    /* Layout-specific colors */
+    --header-background: hsla(240, 10%, 4%, 0.9);
+    --mobilenav-background: linear-gradient(hsla(240, 10%, 4%, 0.9), hsla(12, 78%, 5%, 0.9));
+    --contact-gradient: linear-gradient(var(--background), hsl(17, 81%, 6%), var(--background));
+
+    /* Technology-specific colors */
+    /* HTML */
+    --html-icon: hsl(12, 78%, 52%);
+    --html-icon-hover: hsl(12, 78%, 60%);
+    --html-background: var(--card-background);
+    --html-background-hover: hsl(12, 78%, 11%);
+    --html-border: var(--border);
+    --html-border-hover: hsl(12, 78%, 52%);
+    --html-text: var(--foreground);
+    --html-text-hover: hsl(12, 78%, 90%);
+    --html-description: var(--secondary-foreground);
+    --html-description-hover: hsl(12, 78%, 80%);
+
+    /* CSS */
+    --css-icon: hsl(270, 50%, 40%);
+    --css-icon-hover: hsl(270, 50%, 50%);
+    --css-background: var(--card-background);
+    --css-background-hover: hsl(269, 82%, 11%);
+    --css-border: var(--border);
+    --css-border-hover: hsl(270, 50%, 40%);
+    --css-text: var(--foreground);
+    --css-text-hover: hsl(270, 50%, 90%);
+    --css-description: var(--secondary-foreground);
+    --css-description-hover: hsl(270, 50%, 80%);
+
+    /* JavaScript */
+    --js-icon: hsl(54, 93%, 53%);
+    --js-icon-hover: hsl(54, 93%, 60%);
+    --js-background: var(--card-background);
+    --js-background-hover: hsl(54, 86%, 11%);
+    --js-border: var(--border);
+    --js-border-hover: hsl(54, 93%, 53%);
+    --js-text: var(--foreground);
+    --js-text-hover: hsl(54, 93%, 90%);
+    --js-description: var(--secondary-foreground);
+    --js-description-hover: hsl(54, 93%, 80%);
+
+    /* TypeScript */
+    --ts-icon: hsl(211, 60%, 48%);
+    --ts-icon-hover: hsl(211, 60%, 55%);
+    --ts-letters: var(--card-background);
+    --ts-letters-hover: var(--card-background);
+    --ts-background: var(--card-background);
+    --ts-background-hover: hsl(212, 85%, 11%);
+    --ts-border: var(--border);
+    --ts-border-hover: hsl(211, 60%, 48%);
+    --ts-text: var(--foreground);
+    --ts-text-hover: hsl(211, 60%, 90%);
+    --ts-description: var(--secondary-foreground);
+    --ts-description-hover: hsl(211, 60%, 80%);
+
+    /* React */
+    --react-icon: hsl(191, 65%, 60%);
+    --react-icon-hover: hsl(191, 65%, 70%);
+    --react-background: var(--card-background);
+    --react-background-hover: hsl(192, 38%, 11%);
+    --react-border: var(--border);
+    --react-border-hover: hsl(191, 65%, 60%);
+    --react-text: var(--foreground);
+    --react-text-hover: hsl(191, 65%, 90%);
+    --react-description: var(--secondary-foreground);
+    --react-description-hover: hsl(191, 65%, 80%);
+
+    /* Next.js */
+    --nextjs-icon: hsl(0, 0%, 100%);
+    --nextjs-icon-hover: hsl(0, 0%, 100%);
+    --nextjs-background: var(--card-background);
+    --nextjs-background-hover: hsl(0, 0%, 11%);
+    --nextjs-border: var(--border);
+    --nextjs-border-hover: hsl(0, 0%, 100%);
+    --nextjs-text: var(--foreground);
+    --nextjs-text-hover: hsl(0, 0%, 100%);
+    --nextjs-description: var(--secondary-foreground);
+    --nextjs-description-hover: hsl(0, 0%, 90%);
+}
+
+/* Light theme */
+[data-theme="light"] {
+    /* Base theme colors */
+    --background: hsl(28, 55%, 94%);
+    --foreground: hsl(0, 0%, 20%);
+    --secondary-foreground: hsl(0, 0%, 45%);
+    --primary: hsl(240, 10%, 4%);
+    --card-background: hsl(29, 66%, 90%);
+    --border: hsl(28, 31%, 76%);
+    --text-gradient: hsl(51, 100%, 30%), hsl(0, 94%, 30%);
+
+    /* Layout-specific colors */
+    --header-background: hsla(28, 55%, 94%, 0.9);
+    --mobilenav-background: linear-gradient(hsla(28, 55%, 94%, 0.9), hsla(33, 63%, 79%, 0.9));
+    --contact-gradient: linear-gradient(var(--background), hsl(44, 55%, 85%), var(--background));
+
+    /* Technology-specific colors */
+    --html-color: hsl(12, 78%, 52%);
+    --html-color-hover: hsl(0, 0%, 100%);
+    --html-icon: hsl(12, 78%, 52%);
+    --html-icon-hover: var(--background);
+    --html-background: var(--card-background);
+    --html-background-hover: var(--html-icon);
+    --html-border: var(--border);
+    --html-border-hover: var(--html-icon);
+    --html-text: var(--foreground);
+    --html-text-hover: var(--background);
+    --html-description: var(--secondary-foreground);
+    --html-description-hover: var(--card-background);
+
+    --css-color: hsl(270, 50%, 40%);
+    --css-color-hover: hsl(0, 0%, 100%);
+    --css-icon: hsl(270, 50%, 40%);
+    --css-icon-hover: var(--background);
+    --css-background: var(--card-background);
+    --css-background-hover: var(--css-icon);
+    --css-border: var(--border);
+    --css-border-hover: var(--css-icon);
+    --css-text: var(--foreground);
+    --css-text-hover: var(--background);
+    --css-description: var(--secondary-foreground);
+    --css-description-hover: var(--card-background);
+
+    --js-color: hsl(54, 83%, 26%);
+    --js-color-hover: hsl(0, 0%, 100%);
+    --js-icon: hsl(54, 83%, 26%);
+    --js-icon-hover: var(--background);
+    --js-background: var(--card-background);
+    --js-background-hover: var(--js-icon);
+    --js-border: var(--border);
+    --js-border-hover: var(--js-icon);
+    --js-text: var(--foreground);
+    --js-text-hover: var(--background);
+    --js-description: var(--secondary-foreground);
+    --js-description-hover: var(--card-background);
+
+    --ts-icon: hsl(211, 60%, 48%);
+    --ts-icon-hover: var(--background);
+    --ts-letters: var(--card-background);
+    --ts-letters-hover: var(--ts-icon);
+    --ts-background: var(--card-background);
+    --ts-background-hover: var(--ts-icon);
+    --ts-border: var(--border);
+    --ts-border-hover: var(--ts-icon);
+    --ts-text: var(--foreground);
+    --ts-text-hover: var(--background);
+    --ts-description: var(--secondary-foreground);
+    --ts-description-hover: var(--card-background);
+
+    --react-icon: hsl(195, 91%, 34%);
+    --react-icon-hover: var(--background);
+    --react-background: var(--card-background);
+    --react-background-hover: var(--react-icon);
+    --react-border: var(--border);
+    --react-border-hover: var(--react-icon);
+    --react-text: var(--foreground);
+    --react-text-hover: var(--background);
+    --react-description: var(--secondary-foreground);
+    --react-description-hover: var(--card-background);
+
+    --nextjs-icon: hsl(0, 0%, 20%);
+    --nextjs-icon-hover: var(--background);
+    --nextjs-background: var(--card-background);
+    --nextjs-background-hover: var(--nextjs-icon);
+    --nextjs-border: var(--border);
+    --nextjs-border-hover: var(--nextjs-icon);
+    --nextjs-text: var(--foreground);
+    --nextjs-text-hover: var(--background);
+    --nextjs-description: var(--secondary-foreground);
+    --nextjs-description-hover: var(--card-background);
+}

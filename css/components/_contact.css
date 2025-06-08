@@ -1,0 +1,101 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0.5rem;
+    background-image: var(--contact-gradient);
+}
+
+.contact__content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 38.75rem;
+}
+
+.contact__title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.15rem;
+    margin-bottom: 1.25rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact__form-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 0.5rem;
+}
+
+.contact__form-group--textarea {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.contact__label {
+    color: var(--secondary-foreground);
+    font-size: 0.8rem;
+}
+
+.contact__input,
+.contact__textarea {
+    background-color: hsl(0, 0%, 100%, 0.1);
+    border: 2px solid hsl(0, 0%, 100%, 0.1);
+    border-radius: 0.375rem;
+    padding: 0.375rem;
+    color: var(--foreground);
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+    color: var(--secondary-foreground);
+}
+
+.contact__textarea {
+    min-height: 10rem;
+}
+
+.contact__submit-btn {
+    color: var(--background);
+    font-size: 0.875rem;
+    background-color: var(--foreground);
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    max-width: 8rem;
+    cursor: pointer;
+}
+
+.contact__submit-btn:hover {
+    background-color: hsl(0, 0%, 78%);
+}
+
+/* Light theme overrides for contact form */
+[data-theme="light"] {
+    .contact__input,
+    .contact__textarea {
+        background-color: #F9EDE2;
+        border: 2px solid #D4C0AE;
+        border-radius: 0.375rem;
+        padding: 0.375rem;
+        color: var(--foreground);
+    }
+
+    .contact__submit-btn:hover {
+        background-color: color-mix(in hsl, var(--foreground), white 10%);
+    }
+}

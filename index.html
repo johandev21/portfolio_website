@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/86d28d6b33.js" crossorigin="anonymous"></script>
+    <title>johandev21 - portfolio</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__wrapper">
+            <p class="header__title">johandev21</p>
+            <ul class="mobile_nav" id="mobile_nav">
+                <i class="ri-close-line mobile_nav__close-menu" id="mobile_nav__close-menu"></i>
+                <li class="mobile_nav__li"><a href="#" class="nav__link">Info</a></li>
+                <li class="mobile_nav__li"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="mobile_nav__li"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="mobile_nav__li"><a href="#contact" class="nav__link">Contact</a></li>
+                <i class="ri-sun-line nav__theme-toggle"></i>
+            </ul>
+            <i class="ri-menu-4-line header__menu-icon" id="header__menu-icon"></i>
+            <ul class="desktop_nav" id="desktop_nav">
+                <li class="desktop_nav__li"><a href="#" class="nav__link">Info</a></li>
+                <li class="desktop_nav__li"><a href="#skills" class="nav__link">Skills</a></li>
+                <li class="desktop_nav__li"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="desktop_nav__li"><a href="#contact" class="nav__link">Contact</a></li>
+                <i class="ri-sun-line nav__theme-toggle"></i>
+            </ul>
+        </div>
+    </div>
+    <section id="info" class="info">
+        <div class="info__content">
+            <div class="info__image"></div>
+            <h1 class="info__name">Johan Carrasco</h1>
+            <h2 class="info__career">Web Developer</h2>
+            <p class="info__description">Soy un estudiante de Informática en Inacap, en busca de una práctica
+                profesional
+                para avanzar en mi carrera
+                como ingeniero de software.
+            </p>
+            <div class="info__actions">
+                <a href="" class="info__action-link">
+                    <i class="ri-github-fill info__action-icon info__action-icon--github"></i>
+                </a>
+                <a href="" class="info__action-link">
+                    <i class="ri-linkedin-box-fill info__action-icon info__action-icon--linkedin"></i>
+                </a>
+                <button class="info__cv-button">Curriculum <i class="ri-download-line info__button-icon"></i></button>
+            </div>
+            <div class="scroll-down">
+                <span class="scroll-down__text">Scroll Down</span>
+                <i class="ri-arrow-down-line scroll-down__icon"></i>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="skills">
+        <h2 class="skills__title">Essentials Tools I use</h2>
+        <div class="technologies">
+            <button class="technologies__btn technologies__btn--html">
+                <svg class="technologies__icon technologies__icon--html" width="32" viewBox="0 0 800 820" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M400 663.29L605.298 611.81L633.04 333.92H267.844L258.764 241.444H642.12L652.209 150.789H147.793L176.04 424.58H523.582L511.978 542.11L400 569.445L288.02 542.11L280.958 466.49H180.076L194.704 611.81L400 663.29ZM0 0H800L727.867 738L400 820L72.1311 738L0 0Z"
+                        fill="#E44D26" />
+                </svg>
+                <div class="flex-col">
+                    <span class="technologies__tech-name">HTML</span>
+                    <span class="technologies__tech-description">Skeleton</span>
+                </div>
+            </button>
+
+            <button class="technologies__btn technologies__btn--css">
+                <svg class="technologies__icon technologies__icon--css" width="32" viewBox="0 0 800 824" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M671.964 0H0V692.123C0 727.07 13.5714 760.545 37.5 785.375C61.4286 810.205 94.1071 824 128.036 824H671.964C705.893 824 738.393 810.021 762.5 785.375C786.607 760.729 800 727.07 800 692.123V131.877C800 96.9304 786.429 63.4554 762.5 38.625C738.571 13.7946 705.893 0 671.964 0ZM593.571 734.611C579.821 718.977 572.679 696.537 572.143 667.293H628.036C628.393 693.227 637.143 706.102 654.464 706.102C663.214 706.102 669.464 703.159 673.214 697.457C676.786 691.755 678.571 682.743 678.571 670.236C678.571 660.304 676.25 652.027 671.429 645.589C665.179 637.864 656.964 631.795 647.857 628.116L627.143 618C608.75 608.988 595.357 598.136 586.964 585.629C578.929 573.121 575 555.648 575 533.393C575 508.379 582.143 488.146 596.071 472.512C610.536 456.879 630.179 449.154 655.357 449.154C679.643 449.154 698.393 456.879 711.607 472.145C725 487.595 732.143 509.482 732.679 538.175H678.929C679.286 528.795 677.321 519.414 673.571 510.954C670.536 504.7 664.643 501.573 655.714 501.573C640 501.573 632.143 511.137 632.143 530.45C632.143 540.198 634.107 547.739 637.857 553.625C643.393 560.063 650.357 565.029 658.214 567.971L678.036 576.984C698.571 586.732 713.214 598.504 722.321 612.666C731.429 626.829 735.893 645.773 735.893 669.684C735.893 698.193 728.75 720.08 713.929 735.346C699.286 750.612 679.107 758.337 653.036 758.337C626.964 758.337 607.321 750.613 593.393 734.979L593.571 734.611ZM413.214 734.611C399.464 718.977 392.321 696.537 391.786 667.293H447.679C448.036 693.227 456.786 706.102 474.107 706.102C482.857 706.102 489.107 703.159 492.679 697.457C496.25 691.755 498.036 682.743 498.036 670.236C498.036 660.304 495.714 652.027 491.071 645.589C484.821 637.864 476.607 631.795 467.5 628.116L446.786 618C428.393 608.988 415 598.136 406.607 585.629C398.571 573.121 394.643 555.648 394.643 533.393C394.643 508.379 401.786 488.146 415.714 472.512C430.179 456.879 449.821 449.154 475 449.154C499.286 449.154 518.036 456.879 531.071 472.145C544.643 487.595 551.607 509.482 552.321 538.175H498.571C498.929 528.795 496.964 519.414 493.214 510.954C490.179 504.7 484.286 501.573 475.357 501.573C459.643 501.573 451.786 511.137 451.786 530.45C451.786 540.198 453.75 547.739 457.5 553.625C463.036 560.063 470 565.029 477.857 567.971L497.679 576.984C518.214 586.732 532.857 598.504 541.964 612.666C551.071 626.829 555.536 645.773 555.536 669.684C555.536 698.193 548.214 720.08 533.571 735.346C518.929 750.612 498.75 758.337 472.679 758.337C446.607 758.337 426.964 750.613 413.036 734.979L413.214 734.611ZM224.643 736.634C209.643 722.471 202.321 701.32 202.321 673.179V534.496C202.321 506.539 210.179 485.388 225.893 470.857C241.786 456.511 262.857 449.154 288.75 449.154C313.929 449.154 333.75 456.511 348.393 471.225C363.214 485.939 370.714 508.011 370.714 537.255V548.291H311.607V537.623C311.607 526.404 309.286 517.943 304.464 512.609C302.5 509.85 299.821 507.643 296.786 506.171C293.75 504.7 290.536 503.964 287.143 504.148C277.5 504.148 270.714 507.459 266.786 514.448C262.679 524.013 260.893 534.313 261.429 544.613V665.086C261.429 690.284 270 702.975 287.143 703.343C295.179 703.343 301.25 700.4 305.357 694.514C309.821 686.973 311.964 678.329 311.607 669.5V660.488H370.714V669.868C370.714 689.364 366.964 705.734 359.643 718.793C352.5 731.484 341.964 741.784 329.107 748.221C315.357 755.027 300.357 758.338 285.179 757.97C259.821 757.97 239.643 750.796 224.821 736.634H224.643Z"
+                        fill="#663399" />
+                </svg>
+                <div class="flex-col">
+                    <span class="technologies__tech-name">CSS</span>
+                    <span class="technologies__tech-description">Styling</span>
+                </div>
+            </button>
+
+            <button class="technologies__btn technologies__btn--js">
+                <svg class="technologies__icon technologies__icon--js" width="32" viewBox="0 0 800 780" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M133.333 0C59.6956 0 0 58.2032 0 130V650C0 721.799 59.6956 780 133.333 780H666.667C740.307 780 800 721.799 800 650V130C800 58.2032 740.307 0 666.667 0H133.333ZM459.307 565.717C491.249 590.82 523.187 603.213 555.129 602.897C574.684 602.897 589.676 599.4 600.107 592.41C610.209 585.737 615.262 576.203 615.262 563.81C615.262 551.1 610.209 540.293 600.107 531.397C589.676 522.5 569.96 513.6 540.951 504.703C506.076 494.854 479.187 482.14 460.284 466.57C441.707 451 432.253 429.23 431.929 401.267C431.929 374.89 443.662 352.807 467.129 335.01C489.942 317.213 519.116 308.317 554.64 308.317C604.182 308.317 643.942 320.073 673.929 343.59L639.707 395.547C627.649 386.33 613.796 379.656 598.151 375.527C582.507 370.76 568.493 368.377 556.107 368.377C539.16 368.377 525.631 371.397 515.529 377.433C505.427 383.47 500.373 391.417 500.373 401.267C500.373 412.07 506.564 421.287 518.951 428.913C531.338 436.224 552.52 444.327 582.507 453.223C618.684 463.71 644.431 477.694 659.751 495.17C675.071 512.646 682.729 534.894 682.729 561.903C682.729 589.55 671.809 613.383 649.973 633.403C628.462 653.107 597.173 663.433 556.107 664.387C502.329 664.387 457.351 648.657 421.173 617.197L459.307 565.717ZM213.513 593.363C223.943 599.72 236.491 602.897 251.158 602.897C266.476 602.897 279.188 598.607 289.291 590.027C299.395 581.13 304.447 565.717 304.447 543.79V314.037H370.449V556.183C369.471 593.68 358.387 620.694 337.204 637.217C325.142 647.066 311.942 654.06 297.602 658.19C283.262 662.32 269.41 664.387 256.047 664.387C231.602 664.387 209.928 660.257 191.024 651.993C170.817 643.097 153.869 627.367 140.18 604.803L186.136 568.1C194.61 579.224 203.736 587.643 213.513 593.363Z"
+                        fill="#F7E018" />
+                </svg>
+
+                <div class="flex-col">
+                    <span class="technologies__tech-name">JavaScript</span>
+                    <span class="technologies__tech-description">Interactivity</span>
+                </div>
+            </button>
+
+            <button class="technologies__btn technologies__btn--ts">
+                <svg class="technologies__icon technologies__icon--ts" width="800" viewBox="0 0 800 800" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#a)">
+                        <path
+                            d="M721.875 0H78.125C34.978 0 0 34.978 0 78.125v643.75C0 765.022 34.978 800 78.125 800h643.75C765.022 800 800 765.022 800 721.875V78.125C800 34.978 765.022 0 721.875 0"
+                            fill="#3178C6" />
+                        <path
+                            d="M721.875 0H78.125C34.978 0 0 34.978 0 78.125v643.75C0 765.022 34.978 800 78.125 800h643.75C765.022 800 800 765.022 800 721.875V78.125C800 34.978 765.022 0 721.875 0"
+                            fill="#3178C6" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M495.217 636.6v78.22q19.074 9.778 45.117 14.666 26.043 4.889 54.899 4.889 28.122 0 53.431-5.378 25.31-5.376 44.384-17.722 19.074-12.343 30.2-32.266 11.127-19.921 11.127-49.253 0-21.267-6.358-37.276t-18.34-28.477q-11.982-12.467-28.733-22.367-16.75-9.9-37.782-18.699-15.405-6.355-27.632-12.343-12.227-5.99-20.786-12.222-8.56-6.234-13.205-13.2-4.646-6.967-4.647-15.767 0-8.066 4.158-14.544t11.738-11.122 18.584-7.211 24.455-2.566q9.78.001 20.662 1.466 10.882 1.467 21.888 4.522a152 152 0 0 1 21.396 7.7q10.393 4.644 19.196 10.756v-73.087q-17.85-6.844-39.003-10.144-21.154-3.3-48.541-3.3-27.879 0-52.82 5.989-24.942 5.988-43.896 18.699-18.95 12.712-29.954 32.389-11.005 19.675-11.005 47.053 0 34.954 20.175 59.643 20.172 24.687 61.256 41.799 16.14 6.599 30.078 12.955 13.94 6.355 24.086 13.2 10.149 6.843 16.019 14.91t5.869 18.333q0 7.577-3.669 14.055t-11.126 11.244q-7.459 4.766-18.585 7.454-11.127 2.69-26.044 2.69-25.43 0-50.375-8.922-24.942-8.92-46.217-26.766M363.719 443.878h100.343v-64.19H184.375v64.19h99.853v285.81h79.491z"
+                            class="letter_t" fill="#041A33" />
+                    </g>
+                    <defs>
+                        <clipPath id="a">
+                            <path fill="#fff" d="M0 0h800v800H0z" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="flex-col">
+                    <span class="technologies__tech-name">TypeScript</span>
+                    <span class="technologies__tech-description">Type safety</span>
+                </div>
+            </button>
+
+            <button class="technologies__btn technologies__btn--react">
+                <svg class="technologies__icon technologies__icon--react" width="32" viewBox="0 0 800 714" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M400 414.154c-31.561 0-57.142-25.589-57.142-57.152 0-31.568 25.581-57.153 57.142-57.153 31.558 0 57.143 25.585 57.143 57.153 0 31.563-25.585 57.152-57.143 57.152m-20.102 114.091A684 684 0 0 0 400 551.43a683 683 0 0 0 20.099-23.185 950 950 0 0 1-40.201 0m-75.998-4.766c-30.559-3.231-59.734-7.967-87.074-14.014-2.832 13.32-5.003 26.244-6.485 38.673-7.195 60.33 2.881 96.973 18.23 105.835s52.113-.732 100.755-37.126c10.019-7.499 20.126-15.839 30.244-24.957-18.907-20.655-37.594-43.558-55.67-68.411m279.274-14.014c-27.341 6.047-56.519 10.783-87.075 14.014-18.076 24.853-36.765 47.756-55.672 68.411 10.122 9.118 20.225 17.458 30.248 24.957 48.64 36.394 85.405 45.988 100.754 37.126 15.348-8.862 25.425-45.505 18.228-105.835-1.482-12.429-3.653-25.353-6.483-38.673m55.257-14.783c21.965 100.55 10.4 180.59-38.431 208.785-48.834 28.199-123.92-1.802-200-71.105-76.083 69.303-151.168 99.304-200 71.105-48.833-28.195-60.397-108.235-38.431-208.785C63.522 463.435 0 413.396 0 357.002c0-56.398 63.522-106.434 161.569-137.683C139.603 118.769 151.167 38.73 200 10.532c48.832-28.197 123.917 1.804 200 71.106 76.08-69.302 151.166-99.303 200-71.106 48.831 28.198 60.396 108.237 38.431 208.787C736.476 250.568 800 300.604 800 357.002c0 56.394-63.524 106.433-161.569 137.68M359.57 122.109c-10.118-9.115-20.225-17.457-30.244-24.955-48.642-36.396-85.405-45.99-100.755-37.126-15.349 8.863-25.425 45.503-18.23 105.833 1.482 12.428 3.653 25.353 6.485 38.676 27.34-6.048 56.515-10.783 87.074-14.014 18.076-24.853 36.763-47.756 55.67-68.414m136.529 68.414c30.556 3.231 59.734 7.966 87.075 14.014 2.83-13.323 5.001-26.248 6.483-38.676 7.197-60.33-2.88-96.97-18.228-105.833-15.349-8.864-52.114.73-100.754 37.126-10.023 7.498-20.126 15.84-30.248 24.955 18.907 20.658 37.596 43.561 55.672 68.414m-76-4.767A683 683 0 0 0 400 162.569a684 684 0 0 0-20.102 23.187q9.989-.213 20.102-.213 10.11 0 20.099.213M261.773 460.032a946 946 0 0 1-20.101-34.821 684 684 0 0 0-10.026 29.003 679 679 0 0 0 30.127 5.818m73.614 8.897A873 873 0 0 0 400 471.306c21.939 0 43.543-.811 64.61-2.377a875 875 0 0 0 34.366-54.775c10.967-19.005 21.07-38.125 30.243-57.152-9.173-19.032-19.276-38.152-30.243-57.153a874 874 0 0 0-34.366-54.776 872 872 0 0 0-64.61-2.377c-21.939 0-43.546.81-64.613 2.377a873 873 0 0 0-34.362 54.776 872 872 0 0 0-30.247 57.153 874 874 0 0 0 30.247 57.152 875 875 0 0 0 34.362 54.775m222.941-180.141a689 689 0 0 0 10.027-29.003 684 684 0 0 0-30.13-5.817 955 955 0 0 1 20.103 34.82m-381.93-14.215c-12.953 4.207-25.229 8.79-36.731 13.72-55.836 23.935-82.524 50.98-82.524 68.709 0 17.724 26.688 44.773 82.524 68.704 11.502 4.931 23.778 9.514 36.731 13.721 8.433-26.706 18.921-54.345 31.403-82.425-12.482-28.085-22.97-55.724-31.403-82.429m55.248-14.788a684 684 0 0 0 10.026 29.003 952 952 0 0 1 20.101-34.82 683 683 0 0 0-30.127 5.817M623.6 439.427c12.953-4.207 25.231-8.79 36.732-13.721 55.836-23.931 82.525-50.98 82.525-68.704 0-17.729-26.689-44.774-82.525-68.709-11.501-4.93-23.779-9.513-36.732-13.72-8.434 26.705-18.918 54.344-31.402 82.429 12.484 28.08 22.968 55.719 31.402 82.425m-55.245 14.787a689 689 0 0 0-10.027-29.003 956 956 0 0 1-9.867 17.519 958 958 0 0 1-10.236 17.302 679 679 0 0 0 30.13-5.818"
+                        fill="#58C4DC" />
+                </svg>
+
+                <div class="flex-col">
+                    <span class="technologies__tech-name">React</span>
+                    <span class="technologies__tech-description">Framework</span>
+                </div>
+            </button>
+
+            <button class="technologies__btn technologies__btn--nextjs">
+                <svg class="technologies__icon technologies__icon--nextjs" width="32" viewBox="0 0 800 800" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_97_60)">
+                        <path
+                            d="M373.803 0.215283C372.082 0.371663 366.608 0.918992 361.681 1.30994C248.055 11.5528 141.623 72.8537 74.2131 167.072C36.6764 219.46 12.6686 278.884 3.59726 341.827C0.391007 363.798 0 370.288 0 400.078C0 429.869 0.391007 436.358 3.59726 458.33C25.3372 608.533 132.239 734.731 277.224 781.489C303.187 789.855 330.557 795.563 361.681 799.003C373.803 800.332 426.197 800.332 438.319 799.003C492.043 793.061 537.556 779.768 582.444 756.859C589.326 753.34 590.655 752.402 589.717 751.62C589.091 751.151 559.765 711.821 524.575 664.282L460.606 577.882L380.45 459.268C336.344 394.058 300.059 340.732 299.746 340.732C299.433 340.654 299.12 393.354 298.964 457.704C298.729 570.376 298.651 574.911 297.243 577.569C295.21 581.401 293.646 582.964 290.362 584.685C287.859 585.936 285.67 586.17 273.861 586.17H260.332L256.735 583.903C254.389 582.417 252.669 580.462 251.496 578.195L249.853 574.676L250.01 417.906L250.244 261.057L252.669 258.007C253.92 256.365 256.579 254.254 258.456 253.238C261.662 251.674 262.913 251.518 276.442 251.518C292.395 251.518 295.054 252.143 299.198 256.678C300.371 257.929 343.773 323.296 395.699 402.033C447.625 480.77 518.631 588.281 553.509 641.06L616.852 736.999L620.059 734.887C648.446 716.435 678.475 690.163 702.248 662.796C752.845 604.701 785.455 533.861 796.403 458.33C799.609 436.358 800 429.869 800 400.078C800 370.288 799.609 363.798 796.403 341.827C774.663 191.624 667.761 65.4256 522.776 18.6681C497.204 10.38 469.99 4.67211 439.492 1.23175C431.984 0.449853 380.293 -0.410236 373.803 0.215283ZM537.556 242.135C541.31 244.011 544.36 247.608 545.455 251.361C546.08 253.394 546.237 296.868 546.08 394.84L545.846 535.425L521.056 497.425L496.188 459.424V357.23C496.188 291.16 496.5 254.02 496.97 252.221C498.221 247.843 500.958 244.402 504.712 242.369C507.918 240.727 509.091 240.571 521.369 240.571C532.942 240.571 534.976 240.727 537.556 242.135Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_97_60">
+                            <rect width="800" height="800" fill="blue" class="letter_n" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <div class="flex-col">
+                    <span class="technologies__tech-name">Nextjs</span>
+                    <span class="technologies__tech-description">SSR</span>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="projects__title">My Projects</h2>
+        <p class="projects__suggestion">Tap the images to see their links</p>
+        <div class="projects__container">
+            <div class="project-card">
+                <img src="images/project-img-1.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project-img-2.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project-img-3.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project-img-1.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project-img-2.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/project-img-3.webp" alt="" class="card__image">
+                <div class="project-card__body">
+                    <h3 class="project-card__title">Library Project</h3>
+                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <div class="project-card__technologies">
+                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                            <span class="project-card__technology-name">HTML</span>
+                            <i
+                                class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--css">
+                            <span class="project-card__technology-name">CSS</span>
+                            <i
+                                class="fa-brands fa-css project-card__technology-icon project-card__technology-icon--css"></i>
+                        </button>
+                        <button class="project-card__technology-tag project-card__technology-tag--js">
+                            <span class="project-card__technology-name">JavaScript</span>
+                            <i
+                                class="ri-javascript-fill project-card__technology-icon project-card__technology-icon--js"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="contact__content">
+            <h2 class="contact__title">Email me</h2>
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <div class="contact__input-wrapper">
+                        <label for="nombre" class="contact__label">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre" class="contact__input">
+                    </div>
+                    <div class="contact__input-wrapper">
+                        <label for="email" class="contact__label">Email</label>
+                        <input type="email" name="email" placeholder="ejemplo@email.com" class="contact__input">
+                    </div>
+                </div>
+                <div class="contact__form-group--textarea">
+                    <label for="mensaje" class="contact__label">Tu mensaje</label>
+                    <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
+                        class="contact__textarea"></textarea>
+                </div>
+                <button class="contact__submit-btn">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__name">johandev21</p>
+            <div class="footer-contact-wrapper">
+                <i class="ri-github-fill footer__social-icon footer__github-icon"></i>
+                <i class="ri-linkedin-box-fill footer__social-icon footer__linkedin-icon"></i>
+                <button class="footer__cv-btn">Curriculum <i class="ri-download-line"></i></button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
