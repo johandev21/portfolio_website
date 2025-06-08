@@ -112,7 +112,7 @@
                             fill="#3178C6" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M495.217 636.6v78.22q19.074 9.778 45.117 14.666 26.043 4.889 54.899 4.889 28.122 0 53.431-5.378 25.31-5.376 44.384-17.722 19.074-12.343 30.2-32.266 11.127-19.921 11.127-49.253 0-21.267-6.358-37.276t-18.34-28.477q-11.982-12.467-28.733-22.367-16.75-9.9-37.782-18.699-15.405-6.355-27.632-12.343-12.227-5.99-20.786-12.222-8.56-6.234-13.205-13.2-4.646-6.967-4.647-15.767 0-8.066 4.158-14.544t11.738-11.122 18.584-7.211 24.455-2.566q9.78.001 20.662 1.466 10.882 1.467 21.888 4.522a152 152 0 0 1 21.396 7.7q10.393 4.644 19.196 10.756v-73.087q-17.85-6.844-39.003-10.144-21.154-3.3-48.541-3.3-27.879 0-52.82 5.989-24.942 5.988-43.896 18.699-18.95 12.712-29.954 32.389-11.005 19.675-11.005 47.053 0 34.954 20.175 59.643 20.172 24.687 61.256 41.799 16.14 6.599 30.078 12.955 13.94 6.355 24.086 13.2 10.149 6.843 16.019 14.91t5.869 18.333q0 7.577-3.669 14.055t-11.126 11.244q-7.459 4.766-18.585 7.454-11.127 2.69-26.044 2.69-25.43 0-50.375-8.922-24.942-8.92-46.217-26.766M363.719 443.878h100.343v-64.19H184.375v64.19h99.853v285.81h79.491z"
-                            class="letter_t" fill="#041A33" />
+                            fill="#041A33" />
                     </g>
                     <defs>
                         <clipPath id="a">
@@ -150,7 +150,7 @@
                     </g>
                     <defs>
                         <clipPath id="clip0_97_60">
-                            <rect width="800" height="800" fill="blue" class="letter_n" />
+                            <rect width="800" height="800" fill="white" />
                         </clipPath>
                     </defs>
                 </svg>
@@ -166,13 +166,20 @@
         <h2 class="projects__title">My Projects</h2>
         <p class="projects__suggestion">Tap the images to see their links</p>
         <div class="projects__container">
+
             <div class="project-card">
-                <img src="images/project-img-1.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-1-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-1.webp">
+                    <img src="images/project-img-1.webp" alt="Library Project screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -190,13 +197,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="images/project-img-2.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-2-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-2.webp">
+                    <img src="images/project-img-2.webp" alt="Project 2 screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
-                    <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3 class="project-card__title">Project Two</h3>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -214,13 +228,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="images/project-img-3.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-3-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-3.webp">
+                    <img src="images/project-img-3.webp" alt="Project 3 screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
-                    <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3 class="project-card__title">Project Three</h3>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -238,13 +259,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="images/project-img-1.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-1-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-1.webp">
+                    <img src="images/project-img-1.webp" alt="Project 1 screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
-                    <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3 class="project-card__title">Project Four</h3>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -262,13 +290,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="images/project-img-2.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-2-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-2.webp">
+                    <img src="images/project-img-2.webp" alt="Project 2 screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
-                    <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3 class="project-card__title">Project Five</h3>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -286,13 +321,20 @@
                     </div>
                 </div>
             </div>
+
             <div class="project-card">
-                <img src="images/project-img-3.webp" alt="" class="card__image">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="images/project-img-3-mobile.webp">
+                    <source media="(min-width: 601px)" srcset="images/project-img-3.webp">
+                    <img src="images/project-img-3.webp" alt="Project 3 screenshot" class="card__image">
+                </picture>
                 <div class="project-card__body">
-                    <h3 class="project-card__title">Library Project</h3>
-                    <p class="project-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    <h3 class="project-card__title">Project Six</h3>
+                    <p class="project-card__description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
                     <div class="project-card__technologies">
-                        <button class="project-card__technology-tag project-card__technology-tag--html ">
+                        <button class="project-card__technology-tag project-card__technology-tag--html">
                             <span class="project-card__technology-name">HTML</span>
                             <i
                                 class="ri-html5-fill project-card__technology-icon project-card__technology-icon--html"></i>
@@ -310,8 +352,10 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
     <section id="contact" class="contact">
         <div class="contact__content">
             <h2 class="contact__title">Email me</h2>
