@@ -31,12 +31,17 @@
     width: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    transition: background-color 0.15s;
+    transition: all 0.25s;
     position: relative;
+    border: 1px solid transparent;
 }
 
 .project-card:hover {
-    background-color: var(--card-background);
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .project-card::after {
@@ -97,64 +102,18 @@
     font-size: 1.125rem;
 }
 
-/* Technology tag hover effects */
-.project-card__technology-tag--html:hover {
-    background-color: var(--html-background-hover);
-    border: 1px solid var(--html-icon);
-    color: var(--html-icon);
-}
-
-.project-card__technology-tag--html:hover .project-card__technology-name {
-    color: color-mix(in hsl, var(--html-icon), white 60%);
-}
-
-.project-card__technology-tag--css:hover {
-    background-color: var(--css-background-hover);
-    border: 1px solid var(--css-icon);
-    color: var(--css-icon);
-}
-
-.project-card__technology-tag--css:hover .project-card__technology-name {
-    color: color-mix(in hsl, var(--css-icon), white 60%);
-}
-
-.project-card__technology-tag--js:hover {
-    background-color: var(--js-background-hover);
-    border: 1px solid var(--js-icon);
-    color: var(--js-icon);
-}
-
-.project-card__technology-tag--js:hover .project-card__technology-name {
-    color: color-mix(in hsl, var(--js-icon), white 60%);
-}
-
 /* Light theme overrides for project cards */
 [data-theme="light"] {
-    .project-card__technology-tag--html:hover {
-        background-color: var(--html-color);
-        border: 1px solid var(--html-color);
-        color: var(--html-color-hover);
+    .project-card:hover {
+        background: rgba(74, 71, 51, 0.059);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
     }
 
-    .project-card__technology-tag--css:hover {
-        background-color: var(--css-color);
-        border: 1px solid var(--css-color);
-        color: var(--css-color-hover);
-    }
-    
-    .project-card__technology-tag--js:hover {
-        background-color: var(--js-color);
-        border: 1px solid var(--js-color);
-        color: var(--js-color-hover);
-    }
-    
-    .project-card__technology-tag--html:hover .project-card__technology-name {
-        color: inherit;
-    }
-    .project-card__technology-tag--css:hover .project-card__technology-name {
-        color: inherit;
-    }
-    .project-card__technology-tag--js:hover .project-card__technology-name {
-        color: inherit;
+    .project-card:hover {
+        box-shadow: 0 4px 20px 0 rgba(143, 134, 94, 0.5);
+        background-color: hsla(0, 0%, 100%, 0.1);
     }
 }
