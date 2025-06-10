@@ -35,7 +35,7 @@
     top: -60vh;
     width: 100vw;
     height: 60vh;
-    background-image: var(--mobilenav-background);
+    background: var(--mobilenav-background);
     backdrop-filter: blur(0.4rem);
     z-index: 100;
     display: flex;
