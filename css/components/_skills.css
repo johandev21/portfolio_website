@@ -1,10 +1,11 @@
 .skills {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 2rem 0.5rem;
+    will-change: transform;
 }
 
 .skills__title {
@@ -16,10 +17,12 @@
 
 .technologies {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.75rem;
     width: 100%;
     max-width: 900px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 /* Technology button base styles */
@@ -31,12 +34,12 @@
     padding: 0.5rem 0.25rem;
     padding-left: 1.25rem;
     background: rgba(255, 255, 255, 0.059);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     color: var(--foreground);
-    transition: all 0.25s;
+    transition: background-color 0.25s ease;
+    transform: translateZ(0);
+    will-change: background-color;
 }
 
 .technologies__btn:hover {
@@ -85,6 +88,7 @@
 .technologies__icon--react,
 .technologies__icon--nextjs {
     width: 2rem;
+    transform: translateZ(0);
 }
 
 .technologies__icon--nextjs {
@@ -92,4 +96,26 @@
     border-radius: 50%;
     aspect-ratio: 1/1;
     border: 1px solid #fff;
+}
+
+/* Media queries for better mobile performance */
+@media (max-width: 600px) {
+    .technologies {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+    }
+    
+    .technologies__btn {
+        padding: 0.375rem 0.25rem;
+        padding-left: 0.75rem;
+    }
+    
+    .technologies__icon--html,
+    .technologies__icon--css,
+    .technologies__icon--js,
+    .technologies__icon--ts,
+    .technologies__icon--react,
+    .technologies__icon--nextjs {
+        width: 1.5rem;
+    }
 }
