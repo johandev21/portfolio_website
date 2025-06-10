@@ -30,11 +30,43 @@
     gap: 0.625rem;
     padding: 0.5rem 0.25rem;
     padding-left: 1.25rem;
-    background-color: var(--card-background);
-    border: 2px solid var(--border);
-    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
     color: var(--foreground);
     transition: all 0.25s;
+}
+
+.technologies__btn:hover {
+    background-color: rgba(255, 255, 255, 0.080);
+}
+
+#ts-letters {
+    fill: var(--card-background);
+}
+
+[data-theme="light"] {
+    .technologies__btn {
+        box-shadow: 0 1.5px 20px 0 rgba(182, 170, 119, 0.37);
+    }
+
+    .technologies__btn:hover {
+        background-color: rgba(255, 255, 255, 0.347);
+    }
+
+    .technologies__icon--js path {
+        fill: hsl(54, 100%, 25%);
+    }
+
+    .technologies__btn--react path {
+        fill: #087ea4;
+    }
+
+    #ts-letters {
+        fill: var(--background);
+    }
 }
 
 .technologies__tech-name {
@@ -60,213 +92,4 @@
     border-radius: 50%;
     aspect-ratio: 1/1;
     border: 1px solid #fff;
-}
-
-/* HTML specific styles */
-.technologies__btn--html {
-    background-color: var(--html-background);
-}
-
-.technologies__btn--html:hover {
-    background-color: var(--html-background-hover);
-    border-color: var(--html-border-hover);
-}
-
-.technologies__btn--html .technologies__tech-name {
-    color: var(--html-text);
-}
-
-.technologies__btn--html .technologies__tech-description {
-    color: var(--html-description);
-}
-
-.technologies__btn--html:hover .technologies__tech-name {
-    color: var(--html-text-hover);
-}
-
-.technologies__btn--html:hover .technologies__tech-description {
-    color: var(--html-description-hover);
-}
-
-.technologies__icon--html path {
-    fill: var(--html-icon);
-    transition: fill 0.25s;
-}
-
-.technologies__btn--html:hover .technologies__icon--html path {
-    fill: var(--html-icon-hover);
-}
-
-/* CSS specific styles */
-.technologies__btn--css {
-    background-color: var(--css-background);
-}
-
-.technologies__btn--css:hover {
-    background-color: var(--css-background-hover);
-    border-color: var(--css-border-hover);
-}
-
-.technologies__btn--css .technologies__tech-name {
-    color: var(--css-text);
-}
-
-.technologies__btn--css .technologies__tech-description {
-    color: var(--css-description);
-}
-
-.technologies__btn--css:hover .technologies__tech-name {
-    color: var(--css-text-hover);
-}
-
-.technologies__btn--css:hover .technologies__tech-description {
-    color: var(--css-description-hover);
-}
-
-.technologies__icon--css path {
-    fill: var(--css-icon);
-    transition: fill 0.25s;
-}
-
-.technologies__btn--css:hover .technologies__icon--css path {
-    fill: var(--css-icon-hover);
-}
-
-/* JavaScript specific styles */
-.technologies__btn--js {
-    background-color: var(--js-background);
-}
-
-.technologies__btn--js:hover {
-    background-color: var(--js-background-hover);
-    border-color: var(--js-border-hover);
-}
-
-.technologies__btn--js .technologies__tech-name {
-    color: var(--js-text);
-}
-
-.technologies__btn--js .technologies__tech-description {
-    color: var(--js-description);
-}
-
-.technologies__btn--js:hover .technologies__tech-name {
-    color: var(--js-text-hover);
-}
-
-.technologies__btn--js:hover .technologies__tech-description {
-    color: var(--js-description-hover);
-}
-
-.technologies__icon--js path {
-    fill: var(--js-icon);
-    transition: fill 0.25s;
-}
-
-.technologies__btn--js:hover .technologies__icon--js path {
-    fill: var(--js-icon-hover);
-}
-
-/* TypeScript specific styles */
-.technologies__btn--ts {
-    background-color: var(--ts-background);
-}
-
-.technologies__btn--ts:hover {
-    background-color: var(--ts-background-hover);
-    border-color: var(--ts-border-hover);
-}
-
-.technologies__btn--ts .technologies__tech-name {
-    color: var(--ts-text);
-}
-
-.technologies__btn--ts .technologies__tech-description {
-    color: var(--ts-description);
-}
-
-.technologies__btn--ts:hover .technologies__tech-name {
-    color: var(--ts-text-hover);
-}
-
-.technologies__btn--ts:hover .technologies__tech-description {
-    color: var(--ts-description-hover);
-}
-
-.technologies__icon--ts .letter_t {
-    fill: var(--ts-letters);
-    transition: fill 0.25s;
-}
-
-.technologies__btn--ts:hover .technologies__icon--ts .letter_t {
-    fill: var(--ts-letters-hover);
-}
-
-.technologies__btn--ts .technologies__icon--ts path {
-    transition: fill 0.25s;
-}
-
-.technologies__btn--ts:hover .technologies__icon--ts path {
-    fill: var(--ts-icon-hover);
-}
-
-/* React specific styles */
-.technologies__btn--react {
-    background-color: var(--react-background);
-}
-
-.technologies__btn--react:hover {
-    background-color: var(--react-background-hover);
-    border-color: var(--react-border-hover);
-}
-
-.technologies__btn--react .technologies__tech-name {
-    color: var(--react-text);
-}
-
-.technologies__btn--react .technologies__tech-description {
-    color: var(--react-description);
-}
-
-.technologies__btn--react:hover .technologies__tech-name {
-    color: var(--react-text-hover);
-}
-
-.technologies__btn--react:hover .technologies__tech-description {
-    color: var(--react-description-hover);
-}
-
-.technologies__icon--react path {
-    fill: var(--react-icon);
-    transition: fill 0.25s;
-}
-
-.technologies__btn--react:hover .technologies__icon--react path {
-    fill: var(--react-icon-hover);
-}
-
-/* Next.js specific styles */
-.technologies__btn--nextjs {
-    background-color: var(--nextjs-background);
-}
-
-.technologies__btn--nextjs:hover {
-    background-color: var(--nextjs-background-hover);
-    border-color: var(--nextjs-border-hover);
-}
-
-.technologies__btn--nextjs .technologies__tech-name {
-    color: var(--nextjs-text);
-}
-
-.technologies__btn--nextjs .technologies__tech-description {
-    color: var(--nextjs-description);
-}
-
-.technologies__btn--nextjs:hover .technologies__tech-name {
-    color: var(--nextjs-text-hover);
-}
-
-.technologies__btn--nextjs:hover .technologies__tech-description {
-    color: var(--nextjs-description-hover);
 }
