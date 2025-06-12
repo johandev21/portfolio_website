@@ -3,14 +3,20 @@ const openMenuBtn = document.querySelector("#header__menu-icon");
 const mobileNav = document.querySelector("#mobile_nav");
 const themeToggles = document.querySelectorAll(".nav__theme-toggle");
 
-// Mobile menu functionality
 closeMenuBtn.addEventListener("click", () => {
-    mobileNav.style.top = "-60vh"
-})
+    mobileNav.classList.remove("mobile_nav--open");
+});
 
 openMenuBtn.addEventListener("click", () => {
-    mobileNav.style.top = "0"
-})
+    mobileNav.classList.add("mobile_nav--open");
+});
+
+const navLinks = document.querySelectorAll(".mobile_nav .nav__link");
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        mobileNav.classList.remove("mobile_nav--open");
+    });
+});
 
 // Theme toggle functionality
 function setTheme(themeName) {
