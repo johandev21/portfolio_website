@@ -31,10 +31,9 @@
 .mobile_nav {
     position: fixed;
     left: 0;
-    right: 0;
-    top: -60vh;
+    top: -100vh; /* This is the default, "hidden" state */
     width: 100vw;
-    height: 60vh;
+    height: 100vh;
     background: var(--mobilenav-background);
     backdrop-filter: blur(0.4rem);
     z-index: 100;
@@ -43,9 +42,14 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    border-bottom-left-radius: 0.5rem;
-    border-bottom-right-radius: 0.5rem;
-    transition: top 0.5s;
+    transition: top 0.5s ease-in-out; /* Use a smoother transition */
+    overflow-y: auto;
+    padding-top: 3rem; 
+}
+
+/* ADD THIS NEW CLASS */
+.mobile_nav--open {
+    top: 0; /* This class makes the menu visible */
 }
 
 .mobile_nav__close-menu {
