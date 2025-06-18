@@ -27,9 +27,13 @@
     text-align: left;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    background: linear-gradient(90deg, var(--text-gradient));
+    background: var(--text-gradient);
+    background: var(--text-gradient);
     -webkit-background-clip: text;
-    color: transparent;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
     display: inline-block;
 }
 
@@ -98,7 +102,7 @@
     color: var(--background);
     font-size: 0.875rem;
     font-weight: 500;
-    background: linear-gradient(90deg, var(--text-gradient));
+    background: linear-gradient(90deg, hsl(51, 100%, 50%), hsl(0, 94%, 51%));
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     border: none;
