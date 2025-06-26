@@ -4,10 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Johan Carrasco, Software Developer. Projects, skills, and contact information.">
+    <meta property="og:title" content="Johan Carrasco | Software Developer Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Johan Carrasco, Software Developer. Projects, skills, and contact information.">
+    <meta property="og:image" content="images/og-image.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Johan Carrasco | Software Developer Portfolio">
+    <meta name="twitter:description"
+        content="Portfolio of Johan Carrasco, Software Developer. Projects, skills, and contact information.">
+    <meta name="twitter:image" content="images/og-image.webp">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/86d28d6b33.js" crossorigin="anonymous"></script>
-    <title>johandev21 - portfolio</title>
+    <title>Johan Carrasco | Software Developer Portfolio</title>
 </head>
 
 <body>
@@ -15,7 +28,9 @@
         <div class="header__wrapper">
             <p class="header__title">johandev21</p>
             <ul class="mobile_nav" id="mobile_nav">
-                <i class="ri-close-line mobile_nav__close-menu" id="mobile_nav__close-menu"></i>
+                <li>
+                    <i class="ri-close-line mobile_nav__close-menu" id="mobile_nav__close-menu"></i>
+                </li>
                 <li class="mobile_nav__li"><a href="#" class="nav__link">Info</a></li>
                 <li class="mobile_nav__li"><a href="#skills" class="nav__link">Skills</a></li>
                 <li class="mobile_nav__li"><a href="#projects" class="nav__link">Projects</a></li>
@@ -28,7 +43,9 @@
                 <li class="desktop_nav__li"><a href="#skills" class="nav__link">Skills</a></li>
                 <li class="desktop_nav__li"><a href="#projects" class="nav__link">Projects</a></li>
                 <li class="desktop_nav__li"><a href="#contact" class="nav__link">Contact</a></li>
-                <i class="ri-sun-line nav__theme-toggle"></i>
+                <li>
+                    <i class="ri-sun-line nav__theme-toggle"></i>
+                </li>
             </ul>
         </div>
     </div>
@@ -43,10 +60,10 @@
                 como ingeniero de software.
             </p>
             <div class="info__actions">
-                <a href="https://github.com/johandev21" target="_blank" class="info__action-link">
+                <a href="https://github.com/johandev21" target="_blank" class="info__action-link" aria-label="Visit my GitHub profile">
                     <i class="ri-github-fill info__action-icon info__action-icon--github"></i>
                 </a>
-                <a href="" class="info__action-link">
+                <a href="https://linkedin.com/in/your-profile-url" target="_blank" class="info__action-link" aria-label="Visit my LinkedIn profile">
                     <i class="ri-linkedin-box-fill info__action-icon info__action-icon--linkedin"></i>
                 </a>
                 <button class="info__cv-button">Curriculum <i class="ri-download-line info__button-icon"></i></button>
@@ -112,8 +129,7 @@
                             fill="#3178C6" />
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M495.217 636.6v78.22q19.074 9.778 45.117 14.666 26.043 4.889 54.899 4.889 28.122 0 53.431-5.378 25.31-5.376 44.384-17.722 19.074-12.343 30.2-32.266 11.127-19.921 11.127-49.253 0-21.267-6.358-37.276t-18.34-28.477q-11.982-12.467-28.733-22.367-16.75-9.9-37.782-18.699-15.405-6.355-27.632-12.343-12.227-5.99-20.786-12.222-8.56-6.234-13.205-13.2-4.646-6.967-4.647-15.767 0-8.066 4.158-14.544t11.738-11.122 18.584-7.211 24.455-2.566q9.78.001 20.662 1.466 10.882 1.467 21.888 4.522a152 152 0 0 1 21.396 7.7q10.393 4.644 19.196 10.756v-73.087q-17.85-6.844-39.003-10.144-21.154-3.3-48.541-3.3-27.879 0-52.82 5.989-24.942 5.988-43.896 18.699-18.95 12.712-29.954 32.389-11.005 19.675-11.005 47.053 0 34.954 20.175 59.643 20.172 24.687 61.256 41.799 16.14 6.599 30.078 12.955 13.94 6.355 24.086 13.2 10.149 6.843 16.019 14.91t5.869 18.333q0 7.577-3.669 14.055t-11.126 11.244q-7.459 4.766-18.585 7.454-11.127 2.69-26.044 2.69-25.43 0-50.375-8.922-24.942-8.92-46.217-26.766M363.719 443.878h100.343v-64.19H184.375v64.19h99.853v285.81h79.491z"
-                            fill="#000000"
-                            id="ts-letters" />
+                            fill="#000000" id="ts-letters" />
                     </g>
                     <defs>
                         <clipPath id="a">
@@ -162,17 +178,16 @@
             </button>
         </div>
     </section>
-
     <section id="projects" class="projects">
         <h2 class="projects__title">My Projects</h2>
         <p class="projects__suggestion">Tap the images to see their links</p>
         <div class="projects__container">
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-1-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-1.webp">
-                    <img src="images/project-img-1.webp" alt="Library Project screenshot" class="card__image">
+                    <img src="images/project-img-1.webp" alt="Library Project screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Library Project</h3>
@@ -198,12 +213,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-2-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-2.webp">
-                    <img src="images/project-img-2.webp" alt="Project 2 screenshot" class="card__image">
+                    <img src="images/project-img-2.webp" alt="Project Two screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Project Two</h3>
@@ -229,12 +244,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-3-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-3.webp">
-                    <img src="images/project-img-3.webp" alt="Project 3 screenshot" class="card__image">
+                    <img src="images/project-img-3.webp" alt="Project Three screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Project Three</h3>
@@ -260,12 +275,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-1-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-1.webp">
-                    <img src="images/project-img-1.webp" alt="Project 1 screenshot" class="card__image">
+                    <img src="images/project-img-1.webp" alt="Project Four screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Project Four</h3>
@@ -291,12 +306,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-2-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-2.webp">
-                    <img src="images/project-img-2.webp" alt="Project 2 screenshot" class="card__image">
+                    <img src="images/project-img-2.webp" alt="Project Five screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Project Five</h3>
@@ -322,12 +337,12 @@
                     </div>
                 </div>
             </div>
-
             <div class="project-card">
                 <picture>
                     <source media="(max-width: 1199px)" srcset="images/project-img-3-mobile.webp">
                     <source media="(min-width: 1200px)" srcset="images/project-img-3.webp">
-                    <img src="images/project-img-3.webp" alt="Project 3 screenshot" class="card__image">
+                    <img src="images/project-img-3.webp" alt="Project Six screenshot" class="card__image"
+                        loading="lazy">
                 </picture>
                 <div class="project-card__body">
                     <h3 class="project-card__title">Project Six</h3>
@@ -353,10 +368,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-
     <section id="contact" class="contact">
         <div class="contact__content">
             <h2 class="contact__title">Email me</h2>
@@ -364,36 +377,39 @@
                 <div class="contact__form-group">
                     <div class="contact__input-wrapper">
                         <label for="nombre" class="contact__label">Nombre</label>
-                        <input type="text" id="nombre" placeholder="Nombre" class="contact__input">
+                        <input type="text" id="nombre" placeholder="Nombre" class="contact__input" aria-required="true">
                     </div>
                     <div class="contact__input-wrapper">
                         <label for="email" class="contact__label">Email</label>
-                        <input type="email" id="email" placeholder="ejemplo@email.com" class="contact__input">
+                        <input type="email" id="email" placeholder="ejemplo@email.com" class="contact__input"
+                            aria-required="true">
                     </div>
                 </div>
                 <div class="contact__form-group--textarea">
                     <label for="mensaje" class="contact__label">Tu mensaje</label>
                     <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí"
-                        class="contact__textarea"></textarea>
+                        class="contact__textarea" aria-required="true"></textarea>
                 </div>
                 <button class="contact__submit-btn">Enviar mensaje</button>
             </form>
         </div>
     </section>
+    </main>
     <footer class="footer">
         <div class="footer__content">
             <p class="footer__name">johandev21</p>
             <div class="footer-contact-wrapper">
-                <a href="https://github.com/johandev21" target="_blank">
+                <a href="https://github.com/johandev21" target="_blank" aria-label="Visit my GitHub profile">
                     <i class="ri-github-fill footer__social-icon footer__github-icon"></i>
                 </a>
-                <i class="ri-linkedin-box-fill footer__social-icon footer__linkedin-icon"></i>
+                <a href="https://linkedin.com/in/your-profile-url" target="_blank" aria-label="Visit my LinkedIn profile">
+                    <i class="ri-linkedin-box-fill footer__social-icon footer__linkedin-icon"></i>
+                </a>
                 <button class="footer__cv-btn">Curriculum <i class="ri-download-line"></i></button>
             </div>
         </div>
     </footer>
-
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 
 </html>
