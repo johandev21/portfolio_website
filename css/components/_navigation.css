@@ -66,3 +66,9 @@
 .mobile_nav .nav__theme-toggle {
     font-size: 1.313rem;
 }
+
+[data-theme="light"] {
+    .mobile_nav {
+        backdrop-filter: blur(2rem);
+    }
+}
