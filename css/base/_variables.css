@@ -30,15 +30,15 @@
     --card-background: hsl(29, 66%, 90%);
     --border: hsl(28, 31%, 76%);
     --text-gradient: linear-gradient(90deg,
-            hsl(48, 100%, 35%) 0%,
-            hsl(38, 100%, 30%) 25%,
-            hsl(8, 90%, 35%) 50%,
-            hsl(5, 75%, 32%) 70%,
-            hsl(40, 90%, 33%) 85%,
-            hsl(48, 100%, 35%) 100%);
-
+    hsl(48, 100%, 35%) 0%,
+    hsl(38, 100%, 30%) 25%,
+    hsl(8, 90%, 35%) 50%,
+    hsl(5, 75%, 32%) 70%,
+    hsl(40, 90%, 33%) 85%,
+    hsl(48, 100%, 35%) 100%);
+    
     /* Layout-specific colors */
     --header-background: hsla(28, 55%, 94%, 0.9);
-    --mobilenav-background: linear-gradient(hsla(28, 55%, 94%, 0.9), hsla(33, 63%, 79%, 0.9));
+    --mobilenav-background: hsla(0, 0%, 0%, 0.05);
     --contact-gradient: linear-gradient(var(--background), hsl(44, 55%, 85%), var(--background));
 }
